@@ -1,0 +1,44 @@
+.message-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.inputView{
+  position: fixed;
+  bottom: 10px;
+  flex-direction: row;
+  display: flex
+}
+.inputMessage{
+  position: fixed;
+  bottom: 10px;
+  border: 1px solid blue;
+  margin: auto;
+  width: 80%;
+  height:30px;
+  font-size: 24px;
+  padding: 3px;
+  background-color: white
+}
+.avatar{
+   width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%; 
+}
+.content{
+  width:80%;
+}
+.everyMessageBlock{
+  width: 100%;
+  text-align: left;
+}
+.me{
+  color:green;
+}
+.your{
+  color:red;
+}

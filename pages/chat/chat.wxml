@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container message-list">
+  <scroll-view scroll-top="{{top}}" id="messageblock">
+    <view wx:for="{{messages}}" wx:key="index" class="everyMessageBlock">
+      <text class="{{item.from==userinfo.nickName?'me':'your'}}">{{item.from==userinfo.nickName?'我':'其他人'}}：</text>
+      <text space="emsp" selectable>{{item.content}}</text>
+    </view>
+  </scroll-view>
+  <input bindconfirm="send" class="inputMessage" value="{{inputMessage}}" confirm-type="发送"></input>
+</view>
